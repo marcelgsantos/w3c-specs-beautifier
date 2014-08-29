@@ -1,0 +1,270 @@
+/* Stylesheet for better readability for W3C Specs */
+
+/* =================== */
+/* ===== General ===== */
+/* =================== */
+
+* {
+	box-sizing: border-box;
+}
+
+/* ================== */
+/* ===== Header ===== */
+/* ================== */
+
+/* Adjust head container */
+.head {
+	background-color: #fff;
+	border-bottom: 1px solid rgba(0, 90, 156, 0.2);
+	box-shadow: 0 3px 3px -1px rgba(0, 0, 0, 0.1);
+	margin-left: -30px;
+	padding: 15px 0 5px;
+	padding-left: 15px;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	z-index: 100;
+}
+
+/* Header title */
+.head h1 {
+	border: none;
+	clear:none!important;
+	display: inline-block;
+	float: left;
+	font-family: Georgia;
+	font-size: 36px;
+	line-height: 50px;
+	margin: 0!important;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	width: 680px;
+}
+
+/* Header image */
+.head p:first-child {
+	border: none;
+	float: left;
+	display: inline-block;
+	margin: 0;
+  	margin-right: 10px;
+	width: 80px;
+}
+
+/* Header hidden content */
+.head h2, .head p, .head hr, .head div, .head dl {
+	display: none;
+}
+
+/* ============================= */
+/* ===== Table of contents ===== */
+/* ============================= */
+
+/* Hide table of contents title */
+#contents {
+	display: none;
+}
+
+/* First level list */
+body > ul.toc,
+div[data-fill-with*="table-of-contents"] > ul.toc,
+div.contents > ul.toc,
+div.toc > ul.toc
+{
+  background-color: rgba(250,250,250,.9);
+  border-right: 1px solid #e9e9e9;
+  float: left;
+  font-size: 14px;
+  height: 100%;
+  left: 0;
+  margin: 0;
+  overflow-y: scroll;
+  padding: 0 25px;
+  padding-bottom: 25px;
+  position:fixed!important;
+  position: absolute;
+  top: 0;
+  width: 360px;
+  z-index: 100;
+}
+
+/* First level items */
+body > ul.toc > li,
+div[data-fill-with*="table-of-contents"] > ul.toc > li,
+div.contents > ul.toc > li,
+div.toc > ul.toc > li
+{
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 24px;
+	margin: 0!important;
+	margin-top: 20px!important;
+	margin-bottom: 5px!important;
+	padding: 0;
+}
+
+/* First level items - section number */
+ul.toc span.secno {
+	float: left;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 24px;
+	margin-left: 0;
+	width: auto;
+}
+
+/* nth level list */
+ul.toc ul {
+	margin: 0;
+	margin-left: 12px!important;
+	padding: 0;
+	font-weight: normal;
+	text-transform: none;
+}
+
+/* nth level list items */
+ul.toc > li > ul.toc > li {
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 24px;
+	margin: 0!important;
+	padding: 0;
+}
+
+ul.toc a {
+	color: #333;
+	text-decoration: none;
+}
+
+/* =================== */
+/* ===== Content ===== */
+/* =================== */
+
+/* Content */
+body {
+	background-image: none;
+	color: #333;
+	font-family: Georgia, serif!important;
+	font-size: 18px;
+	height: 45px;
+	line-height: 1.5;
+	padding: 0;
+	padding-top: 75px;
+	padding-left: 390px!important;
+    margin-right: 40px;
+}
+
+/* Titles and subtitles */
+h2, h3, h4, h5, h6 {
+	color: #333;
+	font-family: Georgia;
+	margin: 0px;
+	margin-top: 30px;
+	margin-bottom: 25px;
+  	text-decoration: none;
+}
+
+h2 {
+	font-size: 32px;
+}
+
+.self-link {
+	display: none;
+}
+
+.secno {
+	font-weight: bold;
+	margin-right: 15px;
+}
+
+/* Example boxes */
+div.example {
+	border: none;
+	background-color: rgba(0, 90, 156, 0.1);
+	margin: 25px 25px 35px 15px;
+	overflow: auto;
+	padding: 25px 30px;
+}
+
+div.example:before {
+	color: #005a9c;
+	font-family: sans-serif;
+	font-weight: bold;
+}
+
+/* Definition boxes */
+dl {
+	border: 1px solid #ccc;
+	background-color: rgba(250, 250, 250, 1);
+	margin: 25px 25px 35px 15px;
+	padding: 25px 30px;
+}
+
+.note, .why {
+    overflow: auto;
+    border: none;
+    padding: 20px 30px;
+    background-color: #f5f5f5;
+    margin-left: 10px;
+    margin-right: 25px;
+}
+
+/* Quotes */
+blockquote {
+	border: none;
+	background: #eef;
+	margin: 25px 25px 35px 15px!important;
+	padding: 25px 30px!important;
+}
+
+/* Tables */
+table.propdef {
+	border: 1px solid #8ccbf2;
+	margin: 25px 25px 35px 15px;
+	padding: 0;
+	table-layout: auto;
+}
+
+.propdef th, td {
+	border-bottom: 1px solid #8ccbf2!important;
+	color: #333;
+	font: normal normal 18px Georgia, serif!important;
+	line-height: 1.5;
+	padding: 10px 20px !important;
+	text-align: left;
+}
+
+table.propdef td:first-child,
+table.propdef-extra td:first-child,
+table.descdef td:first-child,
+table.definition-table td:first-child,
+table.propdef th:first-child,
+table.propdef-extra th:first-child,
+table.descdef th:first-child,
+table.definition-table th:first-child {
+	font-style: italic;
+	font-weight: normal;
+	padding-left: 1em;
+	width: 200px;
+}
+
+.propdef th {
+	width: 200px;
+}
+
+/* Separator */
+h2:before {
+	background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+	background-image: -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+	background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+	content: ' ';
+	display: block;
+	height: 1px;
+	margin-bottom: 30px;
+	margin-top: 40px;
+}
+
+.head + h2:before {
+	display: none;
+}
